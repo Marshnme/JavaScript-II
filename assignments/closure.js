@@ -4,6 +4,17 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function color(){
+  const fav = "green";
+  console.log(`${fav} is my fav color`);
+
+  function color2(){
+    const fav2 = "black";
+    console.log(`${fav} is my first fav color and ${fav2} is my second fav.`)
+  }
+  (color2());
+};
+(color());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
